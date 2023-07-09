@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ECE2D0;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.visual {
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.outcome {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    height: 10vh;
+    width: 100vw;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    gap: 5px
+}
+
+.btn {
+    padding: 20px 30px 20px 30px;
+    border-radius: 15px;
+}
+
+.finalScore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    font-size: 1.6em;
+}
