@@ -1,36 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/zai-thin-handwritten-lettering" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
-    <title>Play Game</title>
+    <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <section class=heading>
+    <section class="heading">
         <h1>Rock Paper Scissors</h1>
     </section>
-    <section class="display">
-        <div class="visual">
-            <span id="choices"></span>
-        </div>
-        <div class="outcome">
-            <span id="winner"></span>
-        </div>
-        <div class="score">
-            <span id="you">You: 0 </span>
-            <span id="computer">Computer: 0</span>
-            <span id="draws">Draws: 0</span>
+    <section class="image-container">
+        <img src="index.png" alt="Rock Paper Scissors">
+    </section>
+    <section class="select">
+        <h2>Select Number of Games</h2>
+        <div class="buttons-container">
+            <button class="btns" id="3">3</button>
+            <button class="btns" id="5">5</button>
+            <button class="btns" id="7">7</button>
         </div>
     </section>
-    <section class="choice">
-        <button class="btn" id="rock">Rock</button>
-        <button class="btn" id="paper">Paper</button>
-        <button class="btn" id="scissors">Scissors</button>
-    </section>
-    <section class="finalScore">
-        <span id="finalScore"></span>
+    <section class="play">
+        <button class = "playButton" id="play">Play Game</button>
     </section>
 </body>
 <script src="index.js"></script>

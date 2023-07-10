@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'zai Thin Handwritten Lettering', sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -9,67 +9,118 @@
 body {
     width: 100vw;
     height: 100vh;
-    background-color: #ECE2D0;
+    background-color: #F5F4EF;
 }
 
 .heading {
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 30px;
+    margin-bottom: 50px;
 }
 
 h1 {
-    font-size: 3em;
-    text-align: center;
+    font-size: 7em;
+    font-weight: 50;
 }
 
-.display {
+h2 {
+    font-size: 5em;
+    font-weight: 50;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    height: 25vh;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.select {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 50vh;
-    width: 100vw;
+    margin-top: 75px;
 }
 
-.visual {
-    height: 30vh;
-    width: 100vw;
+.buttons-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 50px;
+    margin-top: 30px;
+    width: 30vw;
+    height: 7.5vh;
+    gap: 20px;
 }
 
-.outcome {
-    height: 10vh;
-    width: 100vw;
+.btns {
+    font-size: 2em;
+    padding: 10px 25px 10px 25px;
+    border-radius: 10px;
+    border: solid #757575 1px;
+    background-color: #F5F4EF; 
+}
+
+.btns:hover {
+    box-shadow: 0px 15px 20px rgba(76, 76, 76, 0.1);
+    transform: translateY(-2px);
+    border: solid #d9d94c 1px;
+    color: #d9d94c;
+}
+
+.play {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
-.score {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    height: 10vh;
-    width: 100vw;
+.playButton {
+    font-size: 2.5em;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    border: solid #757575 1px;
+    background-color: #F5F4EF; 
 }
 
-.choice {
-    display: flex;
-    justify-content: center;
-    gap: 5px
+.playButton:hover {
+    box-shadow: 0px 15px 20px rgba(76, 76, 76, 0.1);
+    transform: translateY(-2px);
+    border: solid #d9d94c 1px;
+    color: #d9d94c;
 }
 
-.btn {
-    padding: 20px 30px 20px 30px;
-    border-radius: 15px;
+.active {
+    border: solid #d9d94c 1px;
+    color: #d9d94c;
 }
 
-.finalScore {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    font-size: 1.6em;
+.error {
+    border: solid 1px #ff0000;
+    color: #ff0000;
+    transition: all 0.5s;
+}
+
+.error:hover {
+    animation: shake 0.5s;
+    border: solid 1px #ff0000;
+    color: #ff0000;
+
+}
+
+@keyframes shake {
+    0% {
+        margin-left: 10px;
+    }
+    25% {
+        margin-left: 30px;
+    }
+    50% {
+        margin-left: 10px;
+    }
+    75% {
+        margin-left: 30px;
+    }
+    100% {
+        margin-left: 10px;
+    }
 }
