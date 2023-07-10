@@ -131,16 +131,44 @@ function game(choice, num) {
         popupButtons.appendChild(playAgainBtn);
         popupButtons.appendChild(homeBtn);
 
+        //Gets correct grasmmer
+        //Initilize variables
+        let winsGram = "";
+        let lossesGram = "";
+        let drawsGram = "";
+
+        function grammer(val1, val2, val3) {
+            if (val1 === 1) {
+                winsGram = 'win';
+            } else {
+                winsGram = 'wins'
+            }
+            if (val2 === 1) {
+                lossesGram = 'loss'
+            } else {
+                lossesGram = 'losses'
+            }
+            if (val3 === 1) {
+                drawsGram = 'draw'
+            } else {
+                drawsGram = 'draws'
+            }
+            
+
+        }
         //Computes who won and displays it on the overlay
         if (computerWins > playerWins) {
             popupH2.textContent = `Computer Wins`
-            popupH3.textContent =  `${computerWins} Wins, ${playerWins} loses and ${draws} draws!`;
+            grammer(computerWins, playerWins, draws);
+            popupH3.textContent =  `${computerWins} ${winsGram}, ${playerWins} ${lossesGram} and ${draws} ${drawsGram}!`;
         } else if (playerWins > computerWins) {
             popupH2.textContent = `You Win!`
-            popupH3.textContent =  `${playerWins} Wins, ${computerWins} loses and ${draws} draws!`;
+            grammer(playerWins, computerWins, draws)
+            popupH3.textContent =  `${playerWins} ${winsGram}, ${computerWins} ${lossesGram} and ${draws} ${drawsGram}!`;
         } else {
             popupH2.textContent = `Draw!`;
-            popupH3.textContent =  `${playerWins} Wins, ${computerWins} loses and ${draws} draws!`;
+            grammer(playerWins, computerWins, draws)
+            popupH3.textContent =  `${playerWins} ${winsGram}, ${computerWins} ${lossesGram} and ${draws} ${drawsGram}!`;
         }
     }
     

@@ -114,6 +114,7 @@ h1 {
     width: 30%;
     position: relative;
     animation: fadeIn 200ms;
+    border-radius: 14px;
   }
 
   @keyframes fadeIn {
@@ -146,6 +147,16 @@ width: 50vw;
     font-size: 0.7em;
     font-weight: 50;
     padding: 15px 100px 15px 100px;
+    border: solid black 1px;
+    border-radius: 10px;
+    
+}
+
+.playAgainBtn:hover,
+.homeBtn:hover {
+    border: solid #d9d94c 1px;
+    color: #d9d94c;
+    
 }
 
 .active {
